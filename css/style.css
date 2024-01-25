@@ -12,8 +12,14 @@ body {
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
-    padding: 10px;
+    padding: 0;
+    margin: 0;
     font-family: 'Akaya Telivigala';
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 header {
@@ -45,6 +51,12 @@ h3 {
     font-size: 1.6rem;
 }
 
+header {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 main {
     padding: 20px;
     max-width: 1200px;
@@ -53,6 +65,18 @@ main {
 
 main section {
     margin-bottom: 200px;
+}
+
+#stack-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#stack-icons img {
+    width: 72px;
+    height: 72px;
+    margin-right: 10px;
 }
 
 .text-rotation {
@@ -75,6 +99,7 @@ main section {
 
 .work-container {
     width: 250px;
+    min-width: 250px;
     height: 360px;
     background-color: var(--card-color);
     border-radius: 15px;
