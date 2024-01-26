@@ -4,11 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img/STG logo.jpeg">
+    <meta property="og:image" content="https://th.bing.com/th/id/OIG.XkuPls6Mw9op5KEoAdBn?w=1024&h=1024&rs=1&pid=ImgDetMain">
     <title>Santiago Tapasco Giraldo</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.cdnfonts.com/css/carosello" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Akaya Telivigala' rel='stylesheet'>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -99,6 +102,26 @@
 
         <section data-aos="fade-up-right">
             <h2 class="title">Contact</h2>
+
+            <div class="contact-icons">
+                <i class="fa fa-linkedin" onclick=" window.open('https://www.linkedin.com/in/santy1446/','_blank')"></i>
+                <i class="fa fa-github" onclick=" window.open('https://github.com/santy1446','_blank')"></i>
+                <a href="files/English CV.pdf" download="Santiago Tapasco CV"><i class="fa fa-download"></i></a>
+                
+            </div>
+
+            <form action="https://formsubmit.co/santy1446@gmail.com" method="post">
+
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name">
+                <label for="phone">Phone</label>
+                <input type="tel" name="phone" id="phone">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" cols="30" rows="5"></textarea>
+                <input class="btn" type="submit" value="Send">
+            </form>
 
         </section>
     </main>

@@ -13,7 +13,8 @@ body {
     font-family: 'Akaya Telivigala';
 }
 
-html, body {
+html,
+body {
     max-width: 100%;
     overflow-x: hidden;
 }
@@ -148,7 +149,7 @@ main section {
     display: flex;
 }
 
-.work-container .work-container__footer button {
+.btn {
     border-radius: 26px;
     height: 29px;
     font-size: 1.1rem;
@@ -159,7 +160,7 @@ main section {
     cursor: pointer;
 }
 
-.work-container .work-container__footer button:hover {
+.btn:hover {
     background-color: var(--red);
     color: white;
 }
@@ -179,4 +180,82 @@ main section {
     width: 50%;
     padding-left: 30px;
     border-left: 4px solid var(--red)
+}
+
+/* Contact section */
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.contact-icons i:nth-child(1), i:nth-child(2), i:nth-child(3) {
+    font-size: 48px;
+    cursor: pointer;
+    color: black;
+}
+
+.contact-icons i:nth-child(2){
+    margin: 0 20px
+}
+
+form {
+    display: grid;
+    max-width: 380px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form input[type=text], input[type=tel], input[type=email], textarea {
+    margin-bottom: 10px;
+    border-radius: 25px;
+    border: 0;
+    padding-left: 10px;
+}
+
+form input[type=text], input[type=tel], input[type=email] {
+    height: 26px;
+}
+
+form textarea {
+    border-radius: 10px;
+}
+
+form input[type=submit] {
+    margin: 0 auto;
+}
+
+
+
+@media only screen and (max-width: 740px) {
+    header {
+        height: 77vh;
+    }
+    h1 {
+        font-size: 4rem;
+    }
+    #stack-icons img {
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+    }
+    .about-container {
+        display: block;
+    }
+    .about-container .first-column {
+        width: 100%;
+    }
+    .about-container .second-column {
+        width: 100%;
+        padding-left: 0px;
+        border-left: 0;
+    }
+    .title {
+        margin-top: 0px;
+    }
+    main section {
+        margin-bottom: 150px;
+    }
 }

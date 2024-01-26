@@ -55,7 +55,7 @@ const loadWorks = () => {
             </div>
             <div class="work-container__rip"></div>
             <div class="work-container__footer">
-                <button onclick=" window.open('${work.url}','_blank')">Visit</button>
+                <button class="btn" onclick=" window.open('${work.url}','_blank')">Visit</button>
             </div>
         </div>
         `
