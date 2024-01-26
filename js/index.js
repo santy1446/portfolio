@@ -30,7 +30,7 @@ let workList = '';
 const loadIcons = () => {
     ICONS.forEach(icon => {
         iconsList += `
-            <img src="img/${icon.name}" alt="${icon.alt}">
+            <img src="img/${icon.name}" alt="${icon.alt}" title="${icon.alt}">
         `
     });
 
